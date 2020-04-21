@@ -1,0 +1,281 @@
+.inRecord{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 200px;
+    width: 1200px;
+    display: grid;
+    align-items: space-around;
+    justify-content: space-between;
+    grid-template-columns: 50px minmax(0,300px) 350px 200px;
+    grid-template-rows: 200px;
+    grid-template-areas:
+    " a f b c";
+    object-fit: cover;
+    font-size: 25px;
+    line-height: 200px;
+}
+
+.id {
+    grid-area: a;
+}
+
+.singer{
+    grid-area: f;
+}
+
+.singer img{
+    border-radius: 50%;
+}
+
+.name1 {
+    grid-area: b;
+}
+
+.ranking{
+    grid-area: c;
+}
+
+.spacing{
+    grid-area: e;
+}
+
+.singer{
+    min-height: 0;
+    min-width: 0;
+}
+
+#rec{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    border-bottom: 100px;
+}
+
+.inRecord{
+    margin: auto;
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.sContainer{
+    background: linear-gradient(rgba(0 ,0, 0, 0.3), rgba(211,211,211, 0.3)), url('images/vinyl.jpg');
+    min-height: 300px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+*{
+    margin: 0;
+    outline: none;
+}
+
+#search, select {
+    border: none;
+    margin : 30px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    background: white;
+    height: 60px;
+    width: 160px;
+    top: 500px;
+    border-radius: 10px;
+}
+
+#searchForm{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 200px;
+    width: 800px;
+    display: grid;
+    align-items: space-around;
+    justify-content: space-between;
+    grid-template-columns: 100px 500px 50px;
+    grid-template-rows: 40px;
+    grid-template-areas:
+    " a b c";
+    grid-gap: 0px;
+}
+
+#search{
+    width: 500px;
+    grid-area: b;
+}
+
+#select {
+    grid-area: a;
+}
+
+.searchButton {
+    grid-area: c;
+    margin-top: 120px;
+    background: transparent;
+}
+
+#search::placeholder{
+    color: #6E7E85;
+    font-size: 20px;
+}
+
+.searchButton {
+  width: 60px;
+  height: 60px;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 45px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #CFD9D7;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#container{
+    width: 1100px;
+    height: 370px;
+    margin: 20px;
+    margin-top: 100px;
+    margin-bottom: 0em;
+}
+
+.form-img{
+    width: 53%;
+    height: 500px;
+    float: left;
+    padding-right: 30px;
+}
+
+.form-text{
+    background-color: black;
+    height: 390px;
+    padding-left: 300px;
+    text-align: center;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.form-text h3{
+    margin-bottom: 0;
+    font-size: 35px;
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+#name {
+    border: none;
+    margin : 30px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.8);
+    height: 40px;
+    width: 160px;
+}
+
+#name::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+#singer {
+    border: none;
+    margin : 30px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.8);
+    height: 40px;
+    width: 160px;
+}
+
+#singer::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+#rankings {
+    border: none;
+    margin : 30px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.8);
+    height: 40px;
+    width: 160px;
+}
+
+#rankings::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+#genre {
+    border: none;
+    margin : 30px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.8);
+    height: 40px;
+    width: 160px;
+}
+
+#genre::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#submit {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    background: black;
+    width: 400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+i::before{
+    background:transparent;
+}
+
+i{
+    background: transparent;
+}
+i[class*=fa-search]::before{
+    background:transparent;
+ }
+
+
+.fa-search{
+    color:white;
+}
+
+.citation{
+    position: relative;
+    top: 40px;
+}
